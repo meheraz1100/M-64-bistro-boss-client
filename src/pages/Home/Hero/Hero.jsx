@@ -3,7 +3,7 @@ const Hero = () => {
   return (
     <div className="mt-12">
       <div
-        className="hero min-h-screen"
+        className="hero min-h-screen bg-fixed"
         style={{
           backgroundImage:
             "url(https://i.ibb.co/SrPCMgT/chef-service.jpg)",
