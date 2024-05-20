@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SectionsTitle from "../../../Components/SectionsTitle/SectionsTitle";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -8,14 +8,18 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 
-const Testimonials = () => {
+// import rating
+import { Rating } from "@smastrom/react-rating";
+import '@smastrom/react-rating/style.css'
+import { FaQuoteLeft } from "react-icons/fa";
 
-    const [reviews, setReviews] = useState([])
-    useEffect(() => {
-        fetch('reviews.json')
-        .then(res => res.json())
-        .then(data => setReviews(data))
-    }, [])
+const Testimonials = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/review")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
 
   return (
     <section className="my-20">
@@ -25,12 +29,16 @@ const Testimonials = () => {
       ></SectionsTitle>
 
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide>Slide 1</SwiperSlide>
-        {
-            reviews.map(review => <SwiperSlide
-            key={review._id}
-            ></SwiperSlide>)
-        }
+        {reviews.map((review) => (
+          <SwiperSlide key={review._id}>
+            <div className="flex flex-col items-center my-16 mx-24">
+              <Rating style={{ maxWidth: 180 }} value={review.rating} readOnly />
+              <FaQuoteLeft className="my-12 text-7xl"/>
+              <p className="py-8">{review.details}</p>
+              <h3 className="text-2xl text-orange-400">{review.name}</h3>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
