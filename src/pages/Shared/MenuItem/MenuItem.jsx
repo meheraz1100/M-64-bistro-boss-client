@@ -3,8 +3,8 @@ import React from 'react';
 const MenuItem = ({item}) => {
 
     const {name, image, price, recipe} = item;
-    console.log(item)
-    console.log(name)
+    // console.log(item)
+    // console.log(name)
 
     return (
         <div className='flex space-x-2'>
