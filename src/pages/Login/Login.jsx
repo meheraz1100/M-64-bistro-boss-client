@@ -4,9 +4,11 @@ import { AuthContext } from '../../Providers/AuthProvider'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2';
+import SocialLogin from '../../Components/SocialLogin/SocialLogin';
 
 const Login = () => {
 
+  // eslint-disable-next-line
     const [disabled, setDisabled] = useState(true)
 
     const { signIn } = useContext(AuthContext)
@@ -63,7 +65,7 @@ const Login = () => {
  
   return (
     <>
-    <Helmet>
+            <Helmet>
                 <title>
                     Bistro Boss | Login
                 </title>
@@ -130,7 +132,8 @@ const Login = () => {
               <input disabled={false} className="btn btn-primary" type="submit" value="Login" />
             </div>
           </form>
-          <p className='text-center'><small>New Here? <Link to="/signUp" className='text-xl text-orange-700'>Create an account</Link> </small></p>
+            <SocialLogin></SocialLogin>
+          <p className='text-center pb-6'><small>New Here? <Link to="/signUp" className='text-xl text-orange-700'>Create an account</Link> </small></p>
         </div>
       </div>
     </div>
