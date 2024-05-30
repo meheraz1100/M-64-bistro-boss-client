@@ -27,4 +27,12 @@ Be patience!!!
 
 Follow this steps
 1. [Go to the Firebase](https://firebase.google.com)
-2. 
+2. Then Click the top-right corner ( Go to Console ) Button
+3. Then click the (Add project) Button
+4. Give a name of your Project Like : Bistro-boss , after Press Continue
+5. Again Continue
+6. Scroll down and disable the Google Analytics and then continue
+7. and Take a nap
+8. After taking nap press continue
+'./public/Screenshot from 2024-05-30 06-21-50.png'
+10. Click this icon
