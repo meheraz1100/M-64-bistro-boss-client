@@ -21,3 +21,10 @@ git clone https://github.com/meheraz1100/M-64-bistro-boss-client.git
 npm install
 ```
 
+## 3 Now You need the .env.local <== file
+How to prepared this?
+Be patience!!!
+
+Follow this steps
+1. [Go to the Firebase](https://firebase.google.com)
+2. 
