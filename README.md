@@ -13,6 +13,5 @@ Follow The Steps
 
 ## 1
 ```
-bash
 git clone https://github.com/meheraz1100/M-64-bistro-boss-client.git
 ```
