@@ -25,19 +25,7 @@ npm install
 How to prepared this?
 Be patience!!!
 
-Follow this steps
-1. [Go to the Firebase](https://firebase.google.com)
-2. Then Click the top-right corner ( Go to Console ) Button
-3. Then click the (Add project) Button
-4. Give a name of your Project Like : Bistro-boss , after Press Continue
-5. Again Continue
-6. Scroll down and disable the Google Analytics and then continue
-7. and Take a nap
-8. After taking nap press continue
-![Screenshot from 2024-05-30 06-21-50](https://github.com/meheraz1100/M-64-bistro-boss-client/assets/124299889/5c58d7fb-0ae2-4258-816b-2336a68865a8)
-<<<<<<< HEAD
-9. Click this icon
-=======
-
-10. Click this icon 
->>>>>>> 72e3f4c471e3eae0fce07b9f7653b4402011f282
+## 4 Now You can Run this Project 
+```
+npm run dev
+```
